@@ -18,6 +18,16 @@ Create a postgresql db and user, then edit the psycopg2 connect function with th
 * Psycopg2
 * Requests
 
+## Setup
+
+1. Create a virtualenv with python 3.6
+2. Pip install -r requirements.txt
+3. Install PostgreSQL
+4. Add database name as DB_NAME, user as DB_USER and host as DB_HOST as environment variables(for local testing you can just add the values to database.py line 7)
+5. To create database table, run ```python database.py```
+6. To test rate import, run ``` python rates.py ```
+
+
 ## Deploying
 
 Clone application code to the server and add database name, user and host as environment variables.
